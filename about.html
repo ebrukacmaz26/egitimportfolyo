@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ebru Kaçmaz - Öğretmen adayı profili, öğretim felsefesi ve iletişim bilgileri.">
+    <title>Hakkımda | Ebru Kaçmaz e-Portfolyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FEFDF5', charcoal: '#1D1D1F', 'dark-gray': '#4A4A4F',
+                        sage: '#8DA399', 'sage-light': '#A8BFB3', 'sage-dark': '#6B8A7A',
+                        terracotta: '#B85C38', 'terracotta-light': '#D4845F',
+                    },
+                    fontFamily: { lora: ['Lora', 'serif'], inter: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen bg-cream text-dark-gray font-inter">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-cream/80 backdrop-blur-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center group outline-none">
+                    <img src="ebrulogo.svg" alt="Ebru Kaçmaz Logo" class="h-14 md:h-16 lg:h-[72px] w-auto transition-transform duration-300 group-hover:scale-105" />
+                </a>
+                <div class="hidden md:flex items-center gap-10">
+                    <a href="index.html" class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Ana
+                        Sayfa</a>
+                    <a href="about.html"
+                        class="nav-link active text-sm font-medium text-charcoal tracking-wide uppercase">Hakkımda</a>
+                    <a href="works.html"
+                        class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Çalışmalarım</a>
+                    <a href="subject.html"
+                        class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Konu Alanı</a>
+                </div>
+                <button id="mobile-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menü"
+                    aria-expanded="false">
+                    <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300 origin-center"></span>
+                    <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300"></span>
+                    <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300 origin-center"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-cream/95 backdrop-blur-md border-t border-sage/10">
+            <div class="px-6 py-4 flex flex-col gap-4">
+                <a href="index.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Ana
+                    Sayfa</a>
+                <a href="about.html" class="text-sm font-medium text-charcoal tracking-wide uppercase py-2">Hakkımda</a>
+                <a href="works.html"
+                    class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Çalışmalarım</a>
+                <a href="subject.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Konu
+                    Alanı</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-28 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
+        <div class="absolute top-20 left-0 w-80 h-80 bg-sage/5 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+            <!-- Header (Full width top) -->
+            <div class="fade-in-up mb-4 md:mb-6">
+                <div class="inline-flex items-center gap-2 bg-sage/10 rounded-full px-5 py-2 mb-4">
+                    <span class="w-2 h-2 bg-sage rounded-full"></span>
+                    <span class="text-xs font-medium text-sage-dark tracking-widest uppercase">Profil</span>
+                </div>
+                <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal">Hakkımda</h1>
+            </div>
+
+            <!-- Content Grid (Text Left, Image Right) -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-start">
+
+                <!-- Left: Text content (3 cols) -->
+                <div class="order-2 lg:order-1 lg:col-span-3 space-y-10 fade-in-up" style="transition-delay:.1s">
+
+                    <!-- Section 1: Introduction -->
+                    <section>
+                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-3 accent-bar">Tanışma</h2>
+                        <p class="leading-relaxed text-dark-gray/85">
+                            Merhaba, ben Ebru Kaçmaz. 25 yaşındayım. Eskişehirliyim. Eskişehir Osmangazi Üniversitesi
+                            Özel Eğitim ve Sosyal Bilgiler öğretmenliği çift anadal programında eğitim
+                            görmekte olan bir öğretmen adayıyım. Eğitim yolculuğumda her bireyin
+                            öğrenme hakkına ve potansiyeline olan inancım, akademik ve mesleki kimliğimin temel taşını
+                            oluşturmaktadır.
+                        </p>
+                    </section>
+
+                    <!-- Section 2: Teaching Philosophy -->
+                    <section>
+                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-3 accent-bar">Öğretim Felsefem</h2>
+                        <p class="leading-relaxed text-dark-gray/85 mb-3">
+                            Öğretmenlik mesleğini yalnızca bilgi aktarımı olarak değil, bireylerin toplumsal yaşama
+                            etkin katılımını sağlayan bütüncül bir rehberlik süreci olarak değerlendirmekteyim.
+                            Kapsayıcı eğitim felsefem, sınıf ortamında her öğrencinin bireysel farklılıklarının bir
+                            zenginlik kaynağı olarak kabul edilmesi gerektiği ilkesine dayanmaktadır.
+                        </p>
+                        <p class="leading-relaxed text-dark-gray/85">
+                            Farklı öğrenme stillerine ve ihtiyaçlarına yanıt verebilen esnek öğretim ortamları
+                            oluşturmayı hedeflemekteyim. Bu yaklaşım, özel gereksinimli öğrencilerin de akranlarıyla
+                            eşit fırsatlara sahip olmasını güvence altına almaktadır.
+                        </p>
+                    </section>
+
+                    <!-- Section 3: Technology in Classroom -->
+                    <section>
+                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-3 accent-bar">Eğitimde Teknoloji
+                            Kullanımı</h2>
+                        <p class="leading-relaxed text-dark-gray/85 mb-3">
+                            Teknolojinin eğitimdeki rolünü, öğrenme engellerini ortadan kaldıran ve erişilebilirliği
+                            artıran güçlü bir araç olarak görmekteyim. Özellikle özel eğitim alanında, yardımcı
+                            teknolojiler ve dijital materyaller, öğrencilerin bağımsız öğrenme becerilerini geliştirmede
+                            kritik bir işlev üstlenmektedir.
+                        </p>
+                        <p class="leading-relaxed text-dark-gray/85">
+                            Etkileşimli sunumlar, eğitsel videolar ve dijital değerlendirme araçları gibi çeşitli
+                            teknolojik uygulamaları, öğrenme sürecini zenginleştirmek ve bireyselleştirmek amacıyla
+                            kullanmaktayım. Teknoloji, doğru pedagojik yaklaşımla birleştirildiğinde, kapsayıcı bir
+                            sınıf ortamı oluşturmanın en etkili yollarından biridir.
+                        </p>
+                    </section>
+
+                    <!-- Section 4: Contact -->
+                    <section>
+                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-3 accent-bar">İletişim</h2>
+                        <div class="bg-white rounded-2xl border border-sage/10 p-5 space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 bg-sage/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-dark-gray/50 uppercase tracking-wider mb-0.5">E-posta</p>
+                                    <p class="text-dark-gray font-medium">ebrukacmaz784@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 bg-sage/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-dark-gray/50 uppercase tracking-wider mb-0.5">Üniversite</p>
+                                    <p class="text-dark-gray font-medium">Eskişehir Osmangazi Üniversitesi Eğitim
+                                        Fakültesi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right: Profile image (2 cols) -->
+                <div class="order-1 lg:order-2 lg:col-span-2 fade-in-up" style="transition-delay:.15s">
+                    <div class="sticky top-24">
+                        <div class="relative mx-auto max-w-[280px] sm:max-w-sm lg:max-w-[320px]">
+                            <!-- Perfect fit frame -->
+                            <div class="rounded-2xl p-2 bg-white border border-sage/20 shadow-xl">
+                                <img src="ebru3.jpeg" alt="Ebru Kaçmaz profil fotoğrafı"
+                                    class="w-full h-auto max-h-[60vh] rounded-xl object-contain block" loading="eager">
+                            </div>
+                        </div>
+                        <!-- Name card below image -->
+                        <div
+                            class="mt-5 mx-auto max-w-[280px] sm:max-w-sm lg:max-w-[320px] bg-white rounded-2xl border border-sage/10 p-5 text-center shadow-sm">
+                            <h3 class="font-lora text-xl font-semibold text-charcoal mb-1">Ebru Kaçmaz</h3>
+                            <p class="text-sm text-sage font-medium mb-1">Öğretmen Adayı</p>
+                            <p class="text-xs text-dark-gray/60">Özel Eğitim & Sosyal Bilgiler Öğretmenliği</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-sage/10 py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex flex-col items-center md:items-start gap-1">
+                    <span class="font-lora text-lg font-semibold text-charcoal">Ebru Kaçmaz</span>
+                    <span class="text-sm text-dark-gray/60">Öğretim Teknolojileri e-Portfolyosu</span>
+                </div>
+                <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 md:gap-8">
+                    <a href="index.html"
+                        class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Ana
+                        Sayfa</a>
+                    <a href="about.html"
+                        class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Hakkımda</a>
+                    <a href="works.html"
+                        class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Çalışmalarım</a>
+                    <a href="subject.html"
+                        class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Konu
+                        Alanı</a>
+                </div>
+                <p class="text-xs text-dark-gray/40">&copy; 2026 Ebru Kaçmaz. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

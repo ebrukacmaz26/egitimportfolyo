@@ -1,0 +1,74 @@
+/* ===== Neo-Academic Bloom Design System ===== */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background-color: #FEFDF5; color: #4A4A4F; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Lora', serif; }
+
+/* --- Nav link hover underline --- */
+.nav-link { position: relative; transition: color 0.3s ease; }
+.nav-link::after {
+    content: ''; position: absolute; bottom: -4px; left: 0;
+    width: 0; height: 2px; background-color: #8DA399;
+    transition: width 0.35s cubic-bezier(0.25,0.8,0.25,1);
+}
+.nav-link:hover::after, .nav-link.active::after { width: 100%; }
+.nav-link:hover { color: #8DA399; }
+
+/* --- Card hover --- */
+.card-hover { transition: transform 0.4s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.4s cubic-bezier(0.25,0.8,0.25,1); }
+.card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+
+/* --- Buttons --- */
+.btn-sage {
+    background-color: #8DA399; color: #FEFDF5;
+    transition: all 0.35s cubic-bezier(0.25,0.8,0.25,1);
+}
+.btn-sage:hover {
+    background-color: #6B8A7A; transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(141,163,153,0.35);
+}
+.btn-outline-sage {
+    border: 2px solid #8DA399; color: #8DA399; background: transparent;
+    transition: all 0.35s cubic-bezier(0.25,0.8,0.25,1);
+}
+.btn-outline-sage:hover {
+    background-color: #8DA399; color: #FEFDF5;
+    transform: translateY(-2px); box-shadow: 0 8px 24px rgba(141,163,153,0.35);
+}
+
+/* --- Fade-in animation --- */
+.fade-in-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.fade-in-up.visible { opacity: 1; transform: translateY(0); }
+
+/* --- Mobile menu --- */
+.mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.25,0.8,0.25,1); }
+.mobile-menu.open { max-height: 320px; }
+
+/* --- Navbar scroll --- */
+.navbar-scrolled {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    background-color: rgba(254,253,245,0.95) !important;
+    backdrop-filter: blur(12px);
+}
+
+/* --- Decorative dot pattern --- */
+.dot-pattern {
+    background-image: radial-gradient(#8DA399 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* --- Project number badge --- */
+.project-number {
+    width: 48px; height: 48px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lora', serif; font-weight: 700; font-size: 1.25rem;
+}
+
+/* --- Accent bar for headings --- */
+.accent-bar { position: relative; padding-left: 1.25rem; }
+.accent-bar::before {
+    content: ''; position: absolute; left: 0; top: 0.25rem;
+    width: 4px; height: calc(100% - 0.5rem);
+    background: linear-gradient(to bottom, #8DA399, #B85C38);
+    border-radius: 4px;
+}
